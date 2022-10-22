@@ -222,7 +222,7 @@ class OnlinePlot(commands.Cog):
         sp.spines['right'].set_color(FG_COLOR)
         sp.set_title(title, color=FG_COLOR)
         plt.stackplot(x_vals, *y_vals, **kwargs)
-        plt.xticks(rotation=45)
+        plt.xticks(rotation=45) 
 
         buf = BytesIO()
         plt.savefig(buf, format='png')
